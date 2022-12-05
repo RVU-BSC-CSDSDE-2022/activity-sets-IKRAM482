@@ -1,4 +1,5 @@
 #include<stdio.h>
+input
 int main()
 {
   int a, b ,c;

@@ -1,7 +1,7 @@
 #include<stdio.h>
 int input();
 int compare(int a, int b, int c);
-void output(int a, int b, int c, int largest);
+void output(int a, int b, int c, int *largest);
 int main(){
   int a, b, c, largest;
   printf("Enter three no's : ");
@@ -30,7 +30,7 @@ int compare(int a, int b, int c){
     printf("invalid input");
   }
 }
-void output(int a, int b, int c, int largest){
+void output(int a, int b, int c, int *largest){
   if (largest == a){
     printf("The largest of %d, %d and %d is %d\n", a, b, c, largest);
   }
