@@ -1,7 +1,6 @@
 #include<stdio.h>
 int input();
 void add(int a, int b, int *sum );
-int change_number(int *a);
 int output(int a,int b, int sum);
 
 int input()
@@ -11,10 +10,7 @@ int input()
   scanf("%d",&n);
   return n;
 }
-int change_number(int *a)
-{
-  *a=6;
-}
+
 
 void add(int a, int b, int *sum)
 {
@@ -29,7 +25,7 @@ int main()
   int a,b,sum;
   a=input();
   b=input();
-  change_number(&a);
   add(a,b,&sum);
-  printf("the sum of the number%d\n",sum);
+  output(a,b,sum);
+  return(0);
 }
