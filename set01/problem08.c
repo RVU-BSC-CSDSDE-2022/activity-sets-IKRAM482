@@ -33,8 +33,6 @@ void output(int n, int a[n],int sum)
      printf("%d+",a[i]);
   } 
   printf("%d=%d",a[n-1],sum);
- 
-}
 int main()
 {
   int n,sum;

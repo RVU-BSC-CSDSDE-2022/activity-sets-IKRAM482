@@ -17,7 +17,7 @@ int check_scalene(int a, int b, int c)
     printf("scalene triangle\n");
   }
   else{
-    printf("is not a scal\n");
+    printf("is not a scalene\n");
   }
   return isscalene;
 }
