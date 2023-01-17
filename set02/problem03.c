@@ -23,12 +23,10 @@ int is_composite(int n)
     }
   if(var>2)
   {
-    // printf("It is composit number\n");
     result=1;
   }
   else
   {
-    // printf("It is not composite number\n");
     result=2;
   }
   return result;

@@ -8,11 +8,12 @@ int input_array_size()
   int n;
   printf("enter the number:");
   scanf("%d",&n);
+  printf("enter the elements in array");
   return n;
 }
 void input_array(int n, int a[n])
 { 
-  int i,n;
+  int i;
   for(i=0;i<n;i++)
     {
       scanf("%d",&a[i]);
@@ -20,23 +21,37 @@ void input_array(int n, int a[n])
 }
 int sum_composite_numbers(int n, int a[n])
 {
-  int i,p,result;
-  for(i=2; i<=n/2;i++)
+  int i,result=0,var,sum=0;
+    
+  for(i=1; i<=n;i++)
     {
-      if((i%n)==0)
+      if((n%i)==0)
         {
-        p=1;
-        break;
+          var++;
         }
     }
-  if(p==0)
+  if(var>2)
   {
-    printf("It is prime number\n");
+    result=1;
   }
   else
   {
-    printf("It is composite number\n");
+    result=2;
   }
-  return result;
+sum=sum+result;
+  return sum;
 }
-
+void output(int sum)
+{
+  printf("the sum of the compsite number is%d",sum);
+}
+int main()
+{
+  int n,sum;
+  n=input_array_size();
+  int a[n];
+  input_array(n,a);
+  sum=sum_composite_numbers( n, a);
+  output(sum);
+  return 0;
+}
