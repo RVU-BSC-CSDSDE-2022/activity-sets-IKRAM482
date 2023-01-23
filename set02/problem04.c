@@ -42,8 +42,8 @@ sum=sum+result;
   return sum;
 }
 void output(int sum)
-{
-  printf("the sum of the compsite number is%d",sum);
+{ 
+  printf("the sum of the compsite number is %d",sum);
 }
 int main()
 {

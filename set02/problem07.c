@@ -18,7 +18,8 @@ triangle input_traingle()
   triangle t;
   printf("enter the base of the triangle\n");
   scanf("%f",&t.base);
-  printf("enter the altitude of the triangle\n");
+  printf("enter the altitude of the 
+  triangle\n");
   scanf("%f",&t.altitude);
   return t;
 }
