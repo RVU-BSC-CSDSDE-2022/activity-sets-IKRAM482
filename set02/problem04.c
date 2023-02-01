@@ -21,26 +21,27 @@ void input_array(int n, int a[n])
 }
 int sum_composite_numbers(int n, int a[n])
 {
-  int i,result=0,var,sum=0;
-    
-  for(i=1; i<=n;i++)
+  int i,result=0,var,sum=0,j;
+  for(i=0;i<n;i++)
     {
-      if((n%i)==0)
+      
+    
+  for(j=1; j<=a[i];j++)
+    {
+      if((a[i]%j)==0)
         {
           var++;
         }
     }
   if(var>2)
   {
-    result=1;
+    sum=sum+a[i];
+    
   }
-  else
-  {
-    result=2;
   }
-sum=sum+result;
   return sum;
 }
+  
 void output(int sum)
 { 
   printf("the sum of the compsite number is %d",sum);
